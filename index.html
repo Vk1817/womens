@@ -7,7 +7,7 @@
 <meta http-equiv="Cache-Control" content="no-store, no-cache, must-revalidate">
 <meta http-equiv="Pragma" content="no-cache">
 <meta http-equiv="Expires" content="0">
-<title>Video Player | @Crickcast</title>
+<title>Video Player | @CRIxZy</title>
 <link href="https://cdnjs.cloudflare.com/ajax/libs/shaka-player/4.7.11/controls.min.css" rel="stylesheet">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -42,7 +42,7 @@ html,body{box-sizing:border-box;height:100%;width:100%;margin:0;padding:0;font-f
     </svg>
     <h3>Join Our Community</h3>
     <p>Stay updated with the latest content by joining our Telegram channel.</p>
-    <a class="popup-join-btn" href="#" id="_tgLink2" target="_blank" onclick="closePopup()">Join Now</a>
+    <a class="popup-join-btn" href="https://t.me/+yTkSuf20ZUtjMGVl" id="_tgLink2" target="_blank" onclick="closePopup()">Join Now</a>
     <a class="popup-already-joined" onclick="closePopup()">Already Joined</a>
   </div>
 </div>
@@ -50,7 +50,7 @@ html,body{box-sizing:border-box;height:100%;width:100%;margin:0;padding:0;font-f
 <script>
 (function(){
   'use strict';
-  // Updated Telegram link (base64 encoded)
+  // Updated Telegram link (base64 encoded, for player button)
   const _d={
     _t:atob('aHR0cHM6Ly90Lm1lLytreVRrU3VmMjBaVXRqTUdWbA=='), // https://t.me/+yTkSuf20ZUtjMGVl
     _m:atob('aHR0cHM6Ly9hYmJibWZ0YWFhYWFhYWFhbWdkc2hsb3FuMjZ6a2Eub3R0ZS5saXZlLmNmLnd3LmFpdi1jZG4ubmV0L3Npbi1uaXRyby9jbGllbnRzL2Rhc2gvZW5jL2pyMHp2dGF6bHYvb3V0L3YxLzZiYWU5NjM0Zjc1OTRhNzM4NTMwNjU2Mjg0MTc3NDIzL2NlbmMubXBk'),
@@ -137,10 +137,7 @@ html,body{box-sizing:border-box;height:100%;width:100%;margin:0;padding:0;font-f
       window.open(_d._t,'_blank');
     };
     document.getElementById('_tgLink1').onclick=_handler;
-    document.getElementById('_tgLink2').onclick=function(e){
-      _handler(e);
-      closePopup();
-    };
+    // _tgLink2 will just use its href!
   }
 
   document.addEventListener("shaka-ui-loaded",_i);
